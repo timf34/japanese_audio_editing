@@ -8,6 +8,7 @@ def remove_spaces_from_files_in_dir(dir_path: str) -> None:
     files = os.listdir(dir_path)
     for file in files:
         new_file_name = file.replace(" ", "_")
+        new_file_name = new_file_name.replace("-", "")
         os.rename(os.path.join(dir_path, file), os.path.join(dir_path, new_file_name))
 
 

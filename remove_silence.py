@@ -43,6 +43,7 @@ def remove_silence(audio_file_path: str, output_dir: str):
         chunk.export(out_file, format="wav")
         print(f"exported {out_file} to {output_dir}")
 
+
 def convert_from_wav_to_mp3():
     """
         This function converts all the wav files in a directory to mp3 files.
@@ -54,9 +55,10 @@ def convert_from_wav_to_mp3():
 
 
 def main():
-    file_paths = files_in_directory("audio_files")
-    for file_path in file_paths:
-        remove_silence(file_path, "output")
+    # file_paths = files_in_directory("audio_files")
+    # for file_path in file_paths:
+    #     remove_silence(file_path, "output")
+    convert_from_wav_to_mp3()
 
 
 if __name__ == '__main__':

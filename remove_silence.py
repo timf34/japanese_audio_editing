@@ -4,12 +4,7 @@ import os
 
 from typing import List
 
-
-def files_in_directory(dir_path: str) -> List[str]:
-    """
-        This function returns a list of the paths to files in a directory.
-    """
-    return [f for f in os.listdir(dir_path) if os.path.isfile(os.path.join(dir_path, f))]
+from utils import files_in_directory
 
 
 def chcek_files_in_directory():

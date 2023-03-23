@@ -10,3 +10,7 @@ managing the passing of paths -> _fix up dir path related code!_
 _A reminder:_ The job was helping Omar with removing the silence
 on either end of the audio files, and then converting and 
 compressing the files. 
+
+
+To activate venv run:
+`venv/Scripts/activate`
